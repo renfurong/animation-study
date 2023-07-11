@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="card transition1"></div>
+  <button onclick="start()">click</button>
+
+</body>
+
+<script>
+  let show = false
+  function start() {
+    show = !show
+    const el = document.querySelector('.card')
+    console.log(show);
+    el.style.visibility = show ? 'visible' : 'hidden'
+    // el.style.opacity = show ? 1 : 0
+    el.style.background=show?'yellow':'pink'
+    el.style.width=show?'200px':'0px'
+  }
+</script>
+<style>
+  .card {
+    width: 0px;
+    height: 100px;
+    background: pink;
+    visibility: hidden;
+    /* opacity: 0; */
+  }           
+
+  .transition1 {
+    transition-property: width, visibility, background;  /* 过渡属性*/
+    transition-duration: 1s; /* 过渡时间*/
+    transition-timing-function: ease; /* 过渡函数*/
+    transition-delay: 0s;/* 延迟时间*/
+    /* transition: all 3s ease 0s; */
+  }
+
+</style>
+
+</html>
