@@ -32,3 +32,44 @@ animation可以定义每一帧的状态
 
 3. 兼容性问题
   低版本浏览器需要加前缀（animation加前缀，keyframes 也加前缀）
+
+### 动画库
+
+#### [Animate.css](https://animate.style/)
+1. 基本使用添加**class**
+``` class="animate__animated animate__zoomIn" ```
+
+2.  css直接使用动画名称(注意设置动画时间)```animation: zoomIn```
+
+3. 修改动画参数
+  （1）全局
+    ```
+    :root {
+      --animate-duration: 2s;
+      --animate-delay: 0.9s;
+    }
+    ```
+    (2)单独对元素修改
+    ``` 
+    .test {
+      --animate-duration: 2s !important;
+    }
+    ```
+
+    (3)使用快捷类名
+      * Delay classes ```animate__delay-2s ```
+      * Slow, slower, fast, and Faster classes 
+      ```
+          default speed of 1s 
+          animate__slow	2s
+          animate__slower	3s
+          animate__fast	800ms
+          animate__faster	500ms
+       ```
+      * Repeating classes ```animate__repeat-1```
+
+4. 最佳实践以及注意问题
+  * Don't animate root elements
+  * Always animate **block** or **inline-block** level elements
+  * might create scrollbars on your web-thing. **overflow: hidden**
+ 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <h1 class="animate__animated animate__zoomIn test" style="text-align: center;">An animated element</h1>
+  <h2 style="text-align: center;">An animated element</h2>
+</body>
+
+<style>
+  h2 {
+    animation: zoomIn;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    /* don't forget to set a duration! */
+  }
+
+  /* This only changes this particular animation duration */
+  .animate__animated.animate__zoomIn {
+    --animate-duration: 10s;
+  }
+
+  /* This changes all the animations globally */
+  :root {
+    --animate-duration: 2s;
+    --animate-delay: 0.9s;
+  }
+
+  .test {
+    --animate-duration: 2s !important;
+  }
+
+</style>
+
+</html>
