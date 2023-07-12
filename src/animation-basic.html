@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>兔斯基 卖萌</title>
+</head>
+
+<body>
+  <div class="steps"></div>
+</body>
+
+<style type="text/css">
+  @-webkit-keyframes test {
+    0% {
+      background-position: 0px 0;
+    }
+
+    100% {
+      background-position: 0px -400%;
+    }
+  }
+
+  @keyframes test {
+    0% {
+      background-position: 0px 0;
+    }
+
+    100% {
+      background-position: 0px -400%;
+    }
+  }
+
+  .steps {
+    height: 35px;
+    width: 32px;
+    animation: test 4s steps(4, end) infinite;
+    -webkit-animation: test 4s steps(4, end) infinite; /*Webkit内核的浏览器（如 Safari、Chrome）*/
+    -moz-animation: test 4s steps(4, end) infinite; /*gecko内核的浏览器（如 Firefox）*/
+    -o-animation: test 4s steps(4, end) infinite; /*Opera 浏览器*/
+    -ms-animation: test 4s steps(4, end) infinite; /*IE8+*/
+    background: url(./imgs/animation.png);
+  }
+
+</style>
+
+</html>

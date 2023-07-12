@@ -1,5 +1,6 @@
 # animation-study
 动画学习库[gif动图生成工具](https://www.cockos.com/licecap/)
+[css属性浏览器兼容性查询](https://caniuse.com/ciu/index)
 
 ### 浏览器的回流和重绘
 [link](https://juejin.cn/post/6844903569087266823)
@@ -28,3 +29,6 @@ animation可以定义每一帧的状态
 ``` backwards 保持第一帧的状态```
 
 ![](https://media1.giphy.com/media/w1WKpB17wN18nsVUGN/giphy.gif)
+
+3. 兼容性问题
+  低版本浏览器需要加前缀（animation加前缀，keyframes 也加前缀）
