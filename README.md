@@ -90,3 +90,12 @@ animation可以定义每一帧的状态
 * [官网](https://animejs.com/documentation/#cssSelector)
 * [参考1](https://blog.csdn.net/qq_50497708/article/details/128322505?spm=1001.2101.3001.6650.5&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-5-128322505-blog-110709995.235%5Ev38%5Epc_relevant_sort_base1&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-5-128322505-blog-110709995.235%5Ev38%5Epc_relevant_sort_base1&utm_relevant_index=10)
 * [参考2](https://www.jianshu.com/p/39fc8a837b31)
+
+
+#### 三、[animista](https://animista.net/play)一个在线的CSS动画生成工具
+* 优点：直接使用，实时预览，生成代码，上手简单
+* 缺点：动画效果简单有限
+
+#### 四、[cssanimation.io](https://cssanimation.io/getting-started.html)
+* 优点：生成代码，很多demo案例
+* 缺点：动画代码的在线编辑器功能相对简单，不支持一些高级的动画效果和参数调整。
