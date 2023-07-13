@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>anime</title>
+</head>
+
+<body>
+  <div class="test">0%</div>
+  <button onclick="begin()">click</button>
+  <div class="test1"></div>
+</body>
+<script src="../../assets/anime.min.js">0</script>
+<script>
+  
+  var test1 = document.querySelector('.test1');
+  anime({
+    targets: test1,
+    innerHTML: [0, 10000],
+    easing: 'linear',
+    round: 1,
+  });
+
+  function begin() {
+    var logEl = document.querySelector('.test');
+    var battery = {
+      charged: '0%'
+    }
+    anime({
+      targets: battery,
+      charged: '100%',
+      round: 100, //小数点保留两位
+      easing: 'linear',
+      update: function () {
+        logEl.innerHTML = battery.charged;
+      }
+    });
+  }
+
+</script>
+
+<style>
+  .test {
+    background-color: pink;
+    width: 100%;
+    height: 40px;
+  }
+
+</style>
+
+
+</html>
