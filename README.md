@@ -8,6 +8,7 @@
 ### 基础知识学习
 * CSS 动画与 JavaScript 动画的性能 ：[优先使用css动画库，其次js动画库](https://developer.mozilla.org/zh-CN/docs/Web/Performance/CSS_JavaScript_animation_performance)
 * [浏览器的回流和重绘](https://juejin.cn/post/6844903569087266823)
+* [CSS Triggers List – What Kind of Changes You Can Make](https://csstriggers.com/)
 
 
 #### 一、[Transition](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transition) 
@@ -38,6 +39,9 @@ animation可以定义每一帧的状态
 
 #### 三、 [Vue Transition 组件](https://cn.vuejs.org/guide/built-ins/transition.html)
 1. 使用场景
+
+### 四、WebGL
+1. [学习网站](https://webglfundamentals.org/)
 
 ### 动画库
 
@@ -99,3 +103,9 @@ animation可以定义每一帧的状态
 #### 四、[cssanimation.io](https://cssanimation.io/getting-started.html)
 * 优点：生成代码，很多demo案例
 * 缺点：动画代码的在线编辑器功能相对简单，不支持一些高级的动画效果和参数调整。
+
+#### 五、[particles.js](https://vincentgarreau.com/particles.js/#nasa)
+粒子特效背景推荐
+
+#### 六、[tsParticles](https://particles.js.org/)
+粒子动画并将它们用作网站的动画背景Vue.js（2.x 和 3.x）
